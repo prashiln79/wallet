@@ -1,0 +1,40 @@
+name: Copy to Public Repo
+
+on:
+  push:
+    branches:
+      - main # Change this to the branch you want to trigger the action on
+
+jobs:
+  copy-to-public:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Private Repo
+        uses: actions/checkout@v2
+        with:
+          # This checks out the private repo
+          repository: ${{ github.repository }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Checkout Public Repo
+        run: |
+          git clone https://github.com/prashiln79/wallet.git public-repo
+          cd public-repo
+          git remote set-url origin https://prashiln79:${{ secrets.PUBLIC_REPO_PAT }}@github.com/prashiln79/wallet.git
+
+      - name: Copy Files
+        run: |
+          rsync -av --exclude='.git' ./ public-repo/
+
+      - name: Commit and Push
+        run: |
+          cd public-repo
+          git add .
+          git commit -m "Update from private repo"
+          git push origin main # Change this if the default branch is not main
