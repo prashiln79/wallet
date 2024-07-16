@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1720979404188,
+  "timestamp": 1720981255428,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -15,10 +15,10 @@
         "https://prashiln79.github.io/wallet/chunk-WL3JUH6L.js",
         "https://prashiln79.github.io/wallet/favicon.ico",
         "https://prashiln79.github.io/wallet/index.html",
-        "https://prashiln79.github.io/wallet/main-J2DQMFDZ.js",
+        "https://prashiln79.github.io/wallet/main-JIHJDZKZ.js",
         "https://prashiln79.github.io/wallet/manifest.webmanifest",
         "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js",
-        "https://prashiln79.github.io/wallet/styles-WZMVDGOM.css"
+        "https://prashiln79.github.io/wallet/styles-7SKNVDEO.css"
       ],
       "patterns": []
     },
@@ -59,11 +59,11 @@
     "https://prashiln79.github.io/wallet/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "https://prashiln79.github.io/wallet/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "https://prashiln79.github.io/wallet/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "https://prashiln79.github.io/wallet/index.html": "ed12aaf28d57c51b9079949ad7f3658f85bc988d",
-    "https://prashiln79.github.io/wallet/main-J2DQMFDZ.js": "261da26a41164b487f7c3ffedbd3fb3f5f1fe6f2",
+    "https://prashiln79.github.io/wallet/index.html": "9cb1ed7bd953c573fa737d57464c5d747a6ca5c6",
+    "https://prashiln79.github.io/wallet/main-JIHJDZKZ.js": "9f9a70550a93a6b6dbda404707adf7e1f8ba3a98",
     "https://prashiln79.github.io/wallet/manifest.webmanifest": "37bf8f0f2621e54a34edbc4070c58ee75e308fa8",
     "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js": "c0ffed56fdd0aae538663d8a376bbeeb78762696",
-    "https://prashiln79.github.io/wallet/styles-WZMVDGOM.css": "c3484244163e62f0b78c1bb50afa3a381f871e82"
+    "https://prashiln79.github.io/wallet/styles-7SKNVDEO.css": "3588bf1994c6de76cd9583bfaf67a632168fbcea"
   },
   "navigationUrls": [
     {
