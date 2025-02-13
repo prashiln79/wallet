@@ -1,7 +1,7 @@
 {
   "name": "money-manager",
   "short_name": "Wallet",
-  "theme_color": "#000000",
+  "theme_color": "#3b82f680",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
