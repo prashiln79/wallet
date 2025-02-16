@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1739716265111,
+  "timestamp": 1739717075686,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -59,7 +59,23 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "firebase-api",
+      "patterns": [
+        "https:\\/\\/firestore\\.googleapis\\.com\\/.*",
+        "https:\\/\\/firebasestorage\\.googleapis\\.com\\/.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 50,
+      "maxAge": 86400000,
+      "timeoutMs": 5000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
   "hashTable": {
     "https://prashiln79.github.io/wallet/assets/icon/add-txn.svg": "2b9d534434024f27a8eb50a25d0469d58ec39497",
     "https://prashiln79.github.io/wallet/assets/icon/app-icon/icon-128x128.png": "7bff3f8bbbcbf9e5fe66545f26fd6b1fd5bf5420",
