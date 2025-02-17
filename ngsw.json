@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1739821948332,
+  "timestamp": 1739822502503,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -71,7 +71,7 @@
       "strategy": "performance",
       "maxSize": 100,
       "maxAge": 86400000,
-      "timeoutMs": 0,
+      "timeoutMs": 2000,
       "cacheQueryOptions": {
         "ignoreVary": true
       },
