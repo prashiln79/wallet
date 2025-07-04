@@ -1,11 +1,16 @@
 {
-  "name": "money-manager",
-  "short_name": "money-manager",
+  "name": "Money Manager - Personal Finance Tracker",
+  "short_name": "MoneyManager",
+  "description": "Track your expenses, manage budgets, and achieve financial goals with our comprehensive money management app",
   "theme_color": "#dbe9fe",
   "background_color": "#fafafa",
   "display": "fullscreen",
+  "orientation": "portrait-primary",
   "scope": "./",
   "start_url": "./",
+  "categories": ["finance", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
