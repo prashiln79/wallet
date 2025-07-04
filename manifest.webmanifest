@@ -3,7 +3,7 @@
   "short_name": "money-manager",
   "theme_color": "#dbe9fe",
   "background_color": "#fafafa",
-  "display": "standalone",
+  "display": "fullscreen",
   "scope": "./",
   "start_url": "./",
   "icons": [
