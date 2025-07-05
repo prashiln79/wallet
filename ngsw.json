@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1751723029271,
+  "timestamp": 1751725719751,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -140,19 +140,6 @@
       "maxSize": 200,
       "maxAge": 2592000000,
       "timeoutMs": 5000,
-      "cacheQueryOptions": {
-        "ignoreVary": true
-      },
-      "version": 1
-    },
-    {
-      "name": "offline-fallback",
-      "patterns": [
-        "\\/.*"
-      ],
-      "strategy": "performance",
-      "maxSize": 20,
-      "maxAge": 3600000,
       "cacheQueryOptions": {
         "ignoreVary": true
       },
