@@ -11,6 +11,10 @@
   "categories": ["finance", "productivity", "utilities"],
   "lang": "en",
   "dir": "ltr",
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
   "icons": [
     {
       "src": "icons/icon-72x72.png",
