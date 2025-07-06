@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1751805852297,
+  "timestamp": 1751806292569,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -15,7 +15,7 @@
         "https://prashiln79.github.io/wallet/chunk-LE46EMEN.js",
         "https://prashiln79.github.io/wallet/favicon.ico",
         "https://prashiln79.github.io/wallet/index.html",
-        "https://prashiln79.github.io/wallet/main-3CVCAWH5.js",
+        "https://prashiln79.github.io/wallet/main-GI77Z7UH.js",
         "https://prashiln79.github.io/wallet/manifest.webmanifest",
         "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js",
         "https://prashiln79.github.io/wallet/styles-BK2AD2G3.css"
@@ -174,8 +174,8 @@
     "https://prashiln79.github.io/wallet/icons/icon-512x512.png": "1ba671fbd7e7ec01645dc27c087a1a9e6784a94f",
     "https://prashiln79.github.io/wallet/icons/icon-72x72.png": "00bcf6dfd40cf02da208cd094f914e3598a1e41e",
     "https://prashiln79.github.io/wallet/icons/icon-96x96.png": "ec2cea95079d053a34b659b57e8030a0bbb53b5c",
-    "https://prashiln79.github.io/wallet/index.html": "ff0111d4f101255f7268a4778dc24f105955dc68",
-    "https://prashiln79.github.io/wallet/main-3CVCAWH5.js": "d90fe5c3d6e1fa59b8d436a3f72a0fb81553967b",
+    "https://prashiln79.github.io/wallet/index.html": "28adf8ab208d0e3349ba012b22182a645f50d4cc",
+    "https://prashiln79.github.io/wallet/main-GI77Z7UH.js": "9e028ed8c6c726d20e79136ce71d0621b3693ee8",
     "https://prashiln79.github.io/wallet/manifest.webmanifest": "3aa1650c93dd583459a6d1dbf64ce19157944d82",
     "https://prashiln79.github.io/wallet/media/sign-in-TAB6YH4B.png": "c4e2ea81b5e92d26db0113451c9d5598cf5b6ef5",
     "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js": "c0ffed56fdd0aae538663d8a376bbeeb78762696",
