@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1751792445450,
+  "timestamp": 1751792962778,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -15,10 +15,10 @@
         "https://prashiln79.github.io/wallet/chunk-LE46EMEN.js",
         "https://prashiln79.github.io/wallet/favicon.ico",
         "https://prashiln79.github.io/wallet/index.html",
-        "https://prashiln79.github.io/wallet/main-ERPGKLX2.js",
+        "https://prashiln79.github.io/wallet/main-JUP65MR6.js",
         "https://prashiln79.github.io/wallet/manifest.webmanifest",
         "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js",
-        "https://prashiln79.github.io/wallet/styles-GLEYVS7G.css"
+        "https://prashiln79.github.io/wallet/styles-A46BBBIA.css"
       ],
       "patterns": []
     },
@@ -174,12 +174,12 @@
     "https://prashiln79.github.io/wallet/icons/icon-512x512.png": "1ba671fbd7e7ec01645dc27c087a1a9e6784a94f",
     "https://prashiln79.github.io/wallet/icons/icon-72x72.png": "00bcf6dfd40cf02da208cd094f914e3598a1e41e",
     "https://prashiln79.github.io/wallet/icons/icon-96x96.png": "ec2cea95079d053a34b659b57e8030a0bbb53b5c",
-    "https://prashiln79.github.io/wallet/index.html": "0fbf0f89a42f21a454191b43ef5b7088d7880a64",
-    "https://prashiln79.github.io/wallet/main-ERPGKLX2.js": "2a036b43e0663720ade28bd73aac16c402247166",
+    "https://prashiln79.github.io/wallet/index.html": "3bff20de106ec34a23cb9f59cad0149adfdc22a5",
+    "https://prashiln79.github.io/wallet/main-JUP65MR6.js": "ee2fe9c77f24384a6900a4f8aa5a03930db61496",
     "https://prashiln79.github.io/wallet/manifest.webmanifest": "3aa1650c93dd583459a6d1dbf64ce19157944d82",
     "https://prashiln79.github.io/wallet/media/sign-in-TAB6YH4B.png": "c4e2ea81b5e92d26db0113451c9d5598cf5b6ef5",
     "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js": "c0ffed56fdd0aae538663d8a376bbeeb78762696",
-    "https://prashiln79.github.io/wallet/styles-GLEYVS7G.css": "497e87ad492a7856b6d8d912ef8b74898afd0e8b"
+    "https://prashiln79.github.io/wallet/styles-A46BBBIA.css": "89fde0a6d9acd36396e649d1ebce1ddd2addac1a"
   },
   "navigationUrls": [
     {
