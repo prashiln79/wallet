@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1752066117190,
+  "timestamp": 1752066328962,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -44,6 +44,10 @@
         "https://prashiln79.github.io/wallet/assets/icon/test.svg",
         "https://prashiln79.github.io/wallet/assets/images/logo.svg",
         "https://prashiln79.github.io/wallet/assets/images/profile.png",
+        "https://prashiln79.github.io/wallet/assets/images/screenshot/img1.png",
+        "https://prashiln79.github.io/wallet/assets/images/screenshot/img2.png",
+        "https://prashiln79.github.io/wallet/assets/images/screenshot/img3.png",
+        "https://prashiln79.github.io/wallet/assets/images/screenshot/img4.png",
         "https://prashiln79.github.io/wallet/assets/images/sign-in.png",
         "https://prashiln79.github.io/wallet/icons/icon-128x128.png",
         "https://prashiln79.github.io/wallet/icons/icon-144x144.png",
@@ -161,6 +165,10 @@
     "https://prashiln79.github.io/wallet/assets/icon/test.svg": "71f9dbbf00b4febc9dc44f7b9349eb61f7707b36",
     "https://prashiln79.github.io/wallet/assets/images/logo.svg": "44cd2974efec878b1c7fac1c5746693fa10b1d1c",
     "https://prashiln79.github.io/wallet/assets/images/profile.png": "2f9d3e443da016049a7b813e2f3f015b5242e871",
+    "https://prashiln79.github.io/wallet/assets/images/screenshot/img1.png": "fd186a352e09fd0b04b00c3b11d8717539a6fd08",
+    "https://prashiln79.github.io/wallet/assets/images/screenshot/img2.png": "ee9ff323544a055ea1ab4a2999248af19a0f4f95",
+    "https://prashiln79.github.io/wallet/assets/images/screenshot/img3.png": "a9caa33820b03bc41e04eea9db06c9fadee2d098",
+    "https://prashiln79.github.io/wallet/assets/images/screenshot/img4.png": "6f98183a5163bae4ef9b72624488ff3d14ced0c3",
     "https://prashiln79.github.io/wallet/assets/images/sign-in.png": "c4e2ea81b5e92d26db0113451c9d5598cf5b6ef5",
     "https://prashiln79.github.io/wallet/chunk-ONUIP7UP.js": "1735cc2e23ee992c3f9609311c6f28d90088d5af",
     "https://prashiln79.github.io/wallet/chunk-QA2KHQ5Z.js": "4b61453ed8e951d22e1e5a38e7c06f4ed9835d25",
