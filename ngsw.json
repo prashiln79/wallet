@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1752512800121,
+  "timestamp": 1752581906447,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -12,18 +12,18 @@
       },
       "urls": [
         "https://prashiln79.github.io/wallet/chunk-BDRRPAEY.js",
-        "https://prashiln79.github.io/wallet/chunk-BSOQQ7YQ.js",
         "https://prashiln79.github.io/wallet/chunk-BYGCKXVO.js",
+        "https://prashiln79.github.io/wallet/chunk-FWDG3HJC.js",
+        "https://prashiln79.github.io/wallet/chunk-H6QKHC4G.js",
         "https://prashiln79.github.io/wallet/chunk-JDGB2ZQ4.js",
         "https://prashiln79.github.io/wallet/chunk-LKDXID24.js",
-        "https://prashiln79.github.io/wallet/chunk-ON5G4HON.js",
         "https://prashiln79.github.io/wallet/chunk-VG2YU3S7.js",
         "https://prashiln79.github.io/wallet/favicon.ico",
         "https://prashiln79.github.io/wallet/index.html",
-        "https://prashiln79.github.io/wallet/main-TD5MK7HI.js",
+        "https://prashiln79.github.io/wallet/main-GVHS4OI3.js",
         "https://prashiln79.github.io/wallet/manifest.webmanifest",
         "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js",
-        "https://prashiln79.github.io/wallet/styles-SPRFUQLR.css"
+        "https://prashiln79.github.io/wallet/styles-NMAVBRBK.css"
       ],
       "patterns": []
     },
@@ -176,11 +176,11 @@
     "https://prashiln79.github.io/wallet/assets/images/screenshot/img4.png": "6f98183a5163bae4ef9b72624488ff3d14ced0c3",
     "https://prashiln79.github.io/wallet/assets/images/sign-in.png": "c4e2ea81b5e92d26db0113451c9d5598cf5b6ef5",
     "https://prashiln79.github.io/wallet/chunk-BDRRPAEY.js": "dcb1668ebb62bb2fd5abee5ac248383ed70e33f5",
-    "https://prashiln79.github.io/wallet/chunk-BSOQQ7YQ.js": "58ff00304ecae657f55fb0e477946263a5310a6e",
     "https://prashiln79.github.io/wallet/chunk-BYGCKXVO.js": "ec7a1aa70b20d1a141222365bec23cdebd4359bd",
+    "https://prashiln79.github.io/wallet/chunk-FWDG3HJC.js": "e5da0bc136496792a90a8e8f07334d0f2d09ab3e",
+    "https://prashiln79.github.io/wallet/chunk-H6QKHC4G.js": "6c3d30b4a0bf5192dd4b159810f0d9693186ae92",
     "https://prashiln79.github.io/wallet/chunk-JDGB2ZQ4.js": "57547e1e569391aa02bfd3a3be54527c01326a9a",
     "https://prashiln79.github.io/wallet/chunk-LKDXID24.js": "25ed9b211a39ba010880726b4a89a0cc43d32cb2",
-    "https://prashiln79.github.io/wallet/chunk-ON5G4HON.js": "12818a8f39a9c5e57f64caceae56d59b608d1199",
     "https://prashiln79.github.io/wallet/chunk-VG2YU3S7.js": "5cfbf842307b9e5738336a75f21bfb7bbe830e33",
     "https://prashiln79.github.io/wallet/favicon.ico": "68fcfa7f111d7fd87c87ccd89019a811c34ea012",
     "https://prashiln79.github.io/wallet/icons/icon-128x128.png": "7bff3f8bbbcbf9e5fe66545f26fd6b1fd5bf5420",
@@ -192,12 +192,12 @@
     "https://prashiln79.github.io/wallet/icons/icon-512x512.png": "1ba671fbd7e7ec01645dc27c087a1a9e6784a94f",
     "https://prashiln79.github.io/wallet/icons/icon-72x72.png": "00bcf6dfd40cf02da208cd094f914e3598a1e41e",
     "https://prashiln79.github.io/wallet/icons/icon-96x96.png": "ec2cea95079d053a34b659b57e8030a0bbb53b5c",
-    "https://prashiln79.github.io/wallet/index.html": "491730f0592644b967dfb6279bee0dd57cb602cf",
-    "https://prashiln79.github.io/wallet/main-TD5MK7HI.js": "cd450a9306caa179f2d42ba7820df887c16e4b8b",
+    "https://prashiln79.github.io/wallet/index.html": "c7a85bfb873923e7ea89f41e5a357795a31d2ef9",
+    "https://prashiln79.github.io/wallet/main-GVHS4OI3.js": "7f4e61ff1f883c3e2a65008939299057be586c8f",
     "https://prashiln79.github.io/wallet/manifest.webmanifest": "ac7fffd37e96f8350646cfd58fd5ff1af8146bd5",
     "https://prashiln79.github.io/wallet/media/sign-in-TAB6YH4B.png": "c4e2ea81b5e92d26db0113451c9d5598cf5b6ef5",
     "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js": "c0ffed56fdd0aae538663d8a376bbeeb78762696",
-    "https://prashiln79.github.io/wallet/styles-SPRFUQLR.css": "4c10e25f8757a979ee4a44f1a7320325166402d9"
+    "https://prashiln79.github.io/wallet/styles-NMAVBRBK.css": "f3273f9f00df994844d5e0911dfbafb5436b7868"
   },
   "navigationUrls": [
     {
