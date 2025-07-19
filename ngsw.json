@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1752940131303,
+  "timestamp": 1752940308720,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -24,7 +24,7 @@
         "https://prashiln79.github.io/wallet/favicon.ico",
         "https://prashiln79.github.io/wallet/firebase-messaging-sw.js",
         "https://prashiln79.github.io/wallet/index.html",
-        "https://prashiln79.github.io/wallet/main-6MT7B4MW.js",
+        "https://prashiln79.github.io/wallet/main-ZSZM4WAR.js",
         "https://prashiln79.github.io/wallet/manifest.webmanifest",
         "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js",
         "https://prashiln79.github.io/wallet/styles-GOCLGAYN.css"
@@ -214,8 +214,8 @@
     "https://prashiln79.github.io/wallet/icons/icon-512x512.png": "1ba671fbd7e7ec01645dc27c087a1a9e6784a94f",
     "https://prashiln79.github.io/wallet/icons/icon-72x72.png": "00bcf6dfd40cf02da208cd094f914e3598a1e41e",
     "https://prashiln79.github.io/wallet/icons/icon-96x96.png": "ec2cea95079d053a34b659b57e8030a0bbb53b5c",
-    "https://prashiln79.github.io/wallet/index.html": "916f6105d5233e05b1a88c5154c27592666135d2",
-    "https://prashiln79.github.io/wallet/main-6MT7B4MW.js": "bc0855b4cbfe3278e75906f9d7108883927c1d73",
+    "https://prashiln79.github.io/wallet/index.html": "1870b6195959f5597bba4bf4d8b22479f8af304e",
+    "https://prashiln79.github.io/wallet/main-ZSZM4WAR.js": "0cca646969f99337c6e77e919268cfb25092bade",
     "https://prashiln79.github.io/wallet/manifest.webmanifest": "ac7fffd37e96f8350646cfd58fd5ff1af8146bd5",
     "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js": "c0ffed56fdd0aae538663d8a376bbeeb78762696",
     "https://prashiln79.github.io/wallet/styles-GOCLGAYN.css": "e60f142d486f2d2fcea9e29fda01e929595e6937"
