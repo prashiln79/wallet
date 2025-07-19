@@ -30,33 +30,80 @@ try {
   console.error('Failed to initialize Firebase messaging in service worker:', error);
 }
 
+// Platform detection function
+function detectPlatform() {
+  const userAgent = navigator.userAgent;
+  const isAndroid = /Android/i.test(userAgent);
+  const isIOS = /iPad|iPhone|iPod/.test(userAgent);
+  const isChrome = /Chrome/.test(userAgent) && !/Edge/.test(userAgent);
+  const isSafari = /Safari/.test(userAgent) && !/Chrome/.test(userAgent);
+  const isMobile = isAndroid || isIOS || /webOS|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+  
+  return { isAndroid, isIOS, isChrome, isSafari, isMobile };
+}
+
+// Get platform-specific notification options
+function getPlatformSpecificNotificationOptions(payload) {
+  const platform = detectPlatform();
+  
+  // Default options
+  const defaultOptions = {
+    body: payload.notification?.body || 'You have a new notification',
+    icon: payload.notification?.icon || '/icons/icon-192x192.png',
+    badge: payload.notification?.badge || '/icons/icon-72x72.png',
+    image: payload.notification?.image,
+    data: payload.data || {},
+    tag: payload.notification?.tag,
+    requireInteraction: payload.notification?.requireInteraction || false,
+    silent: payload.notification?.silent || false,
+    timestamp: payload.notification?.timestamp || Date.now(),
+    actions: payload.notification?.actions || [
+      {
+        action: 'view',
+        title: 'View'
+      },
+      {
+        action: 'dismiss',
+        title: 'Dismiss'
+      }
+    ]
+  };
+
+  // Platform-specific adjustments
+  if (platform.isIOS) {
+    // iOS prefers specific icon sizes and may have limited action support
+    defaultOptions.icon = payload.notification?.icon || '/icons/icon-152x152.png';
+    defaultOptions.badge = payload.notification?.badge || '/icons/icon-72x72.png';
+    
+    // iOS may not support all notification actions
+    if (platform.isSafari) {
+      defaultOptions.actions = [
+        {
+          action: 'view',
+          title: 'View'
+        }
+      ];
+    }
+  } else if (platform.isAndroid) {
+    // Android Chrome has good support for all features
+    defaultOptions.icon = payload.notification?.icon || '/icons/icon-192x192.png';
+    defaultOptions.badge = payload.notification?.badge || '/icons/icon-72x72.png';
+  } else {
+    // Desktop Chrome has excellent support
+    defaultOptions.icon = payload.notification?.icon || '/icons/icon-192x192.png';
+    defaultOptions.badge = payload.notification?.badge || '/icons/icon-72x72.png';
+  }
+
+  return defaultOptions;
+}
+
 // Handle background messages
 if (messaging) {
   messaging.onBackgroundMessage((payload) => {
     console.log('Background message received:', payload);
 
     const notificationTitle = payload.notification?.title || 'Money Manager';
-    const notificationOptions = {
-      body: payload.notification?.body || 'You have a new notification',
-      icon: payload.notification?.icon || '/icons/icon-192x192.png',
-      badge: payload.notification?.badge || '/icons/icon-72x72.png',
-      image: payload.notification?.image,
-      data: payload.data || {},
-      tag: payload.notification?.tag,
-      requireInteraction: payload.notification?.requireInteraction || false,
-      silent: payload.notification?.silent || false,
-      timestamp: payload.notification?.timestamp || Date.now(),
-      actions: payload.notification?.actions || [
-        {
-          action: 'view',
-          title: 'View'
-        },
-        {
-          action: 'dismiss',
-          title: 'Dismiss'
-        }
-      ]
-    };
+    const notificationOptions = getPlatformSpecificNotificationOptions(payload);
 
     // Show notification
     return self.registration.showNotification(notificationTitle, notificationOptions)
@@ -128,27 +175,7 @@ self.addEventListener('push', (event) => {
       console.log('Push payload:', payload);
 
       const notificationTitle = payload.notification?.title || 'Money Manager';
-      const notificationOptions = {
-        body: payload.notification?.body || 'You have a new notification',
-        icon: payload.notification?.icon || '/icons/icon-192x192.png',
-        badge: payload.notification?.badge || '/icons/icon-72x72.png',
-        image: payload.notification?.image,
-        data: payload.data || {},
-        tag: payload.notification?.tag,
-        requireInteraction: payload.notification?.requireInteraction || false,
-        silent: payload.notification?.silent || false,
-        timestamp: payload.notification?.timestamp || Date.now(),
-        actions: payload.notification?.actions || [
-          {
-            action: 'view',
-            title: 'View'
-          },
-          {
-            action: 'dismiss',
-            title: 'Dismiss'
-          }
-        ]
-      };
+      const notificationOptions = getPlatformSpecificNotificationOptions(payload);
 
       event.waitUntil(
         self.registration.showNotification(notificationTitle, notificationOptions)
