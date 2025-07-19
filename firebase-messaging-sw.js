@@ -49,8 +49,8 @@ function getPlatformSpecificNotificationOptions(payload) {
   // Default options
   const defaultOptions = {
     body: payload.notification?.body || 'You have a new notification',
-    icon: payload.notification?.icon || '/icons/icon-192x192.png',
-    badge: payload.notification?.badge || '/icons/icon-72x72.png',
+    icon: payload.notification?.icon || '/wallet/assets/icon/app-icon/icon-192x192.png',
+    badge: payload.notification?.badge || '/wallet/assets/icon/app-icon/icon-72x72.png',
     image: payload.notification?.image,
     data: payload.data || {},
     tag: payload.notification?.tag,
@@ -72,8 +72,8 @@ function getPlatformSpecificNotificationOptions(payload) {
   // Platform-specific adjustments
   if (platform.isIOS) {
     // iOS prefers specific icon sizes and may have limited action support
-    defaultOptions.icon = payload.notification?.icon || '/icons/icon-152x152.png';
-    defaultOptions.badge = payload.notification?.badge || '/icons/icon-72x72.png';
+    defaultOptions.icon = payload.notification?.icon || '/wallet/assets/icon/app-icon/icon-152x152.png';
+    defaultOptions.badge = payload.notification?.badge || '/wallet/assets/icon/app-icon/icon-72x72.png';
     
     // iOS may not support all notification actions
     if (platform.isSafari) {
@@ -86,12 +86,12 @@ function getPlatformSpecificNotificationOptions(payload) {
     }
   } else if (platform.isAndroid) {
     // Android Chrome has good support for all features
-    defaultOptions.icon = payload.notification?.icon || '/icons/icon-192x192.png';
-    defaultOptions.badge = payload.notification?.badge || '/icons/icon-72x72.png';
+    defaultOptions.icon = payload.notification?.icon || '/wallet/assets/icon/app-icon/icon-192x192.png';
+    defaultOptions.badge = payload.notification?.badge || '/wallet/assets/icon/app-icon/icon-72x72.png';
   } else {
     // Desktop Chrome has excellent support
-    defaultOptions.icon = payload.notification?.icon || '/icons/icon-192x192.png';
-    defaultOptions.badge = payload.notification?.badge || '/icons/icon-72x72.png';
+    defaultOptions.icon = payload.notification?.icon || '/wallet/assets/icon/app-icon/icon-192x192.png';
+    defaultOptions.badge = payload.notification?.badge || '/wallet/assets/icon/app-icon/icon-72x72.png';
   }
 
   return defaultOptions;
@@ -193,8 +193,8 @@ self.addEventListener('push', (event) => {
       const notificationTitle = 'Money Manager';
       const notificationOptions = {
         body: 'You have a new notification',
-        icon: '/icons/icon-192x192.png',
-        badge: '/icons/icon-72x72.png'
+        icon: '/wallet/assets/icon/app-icon/icon-192x192.png',
+        badge: '/wallet/assets/icon/app-icon/icon-72x72.png'
       };
 
       event.waitUntil(
