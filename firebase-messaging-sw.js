@@ -231,7 +231,30 @@ self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
   }
+  
+  // Handle notification requests from Angular service
+  if (event.data && event.data.type === 'SHOW_NOTIFICATION') {
+    console.log('Showing notification via service worker:', event.data.notification);
+    showNotificationFromMessage(event.data.notification);
+  }
 });
+
+// Function to show notification from message
+function showNotificationFromMessage(notificationData) {
+  const platform = detectPlatform();
+  const notificationOptions = getPlatformSpecificNotificationOptions({
+    notification: notificationData,
+    data: notificationData.data || {}
+  });
+
+  self.registration.showNotification(notificationData.title, notificationOptions)
+    .then(() => {
+      console.log('Notification shown successfully via service worker');
+    })
+    .catch((error) => {
+      console.error('Failed to show notification via service worker:', error);
+    });
+}
 
 // Handle service worker errors
 self.addEventListener('error', (event) => {
