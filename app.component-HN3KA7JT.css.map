@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/app.component.scss"],
-  "sourcesContent": [".spacer {\n  flex: 1 1 auto;\n}\n\n.content {\n  padding: 16px;\n}\n\n\n.offline-banner { \n  position: fixed; top: 0; width: 100%; background: red; color: white; text-align: center; padding: 5px; \n}"],
-  "mappings": "AAAA,CAAA,OACE,KAAA,EAAA,EAAA,KAGF,CAAA,QAJA,QAKE,KAIF,CAAA,eACE,SAAA,MAAiB,IAAA,EAAQ,MAAA,KAAa,WAAA,IAAiB,MAAA,KAAc,WAAA,OAVvE,QAU2F",
-  "names": []
-}

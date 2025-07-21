@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/util/components/offline-indicator/offline-indicator.component.scss"],
-  "sourcesContent": [":host {\n  display: block;\n}\n\n// Offline banner styles\n.offline-banner {\n  transition: all 0.3s ease;\n  \n  &:hover {\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n  }\n}\n\n// Online banner styles\n.online-banner {\n  transition: all 0.3s ease;\n  \n  &:hover {\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n  }\n}\n\n// Connection quality indicator\n.connection-indicator {\n  transition: all 0.2s ease;\n  \n  &:hover {\n    transform: scale(1.05);\n  }\n}\n\n// Close button styles\n.close-button {\n  transition: all 0.2s ease;\n  \n  &:hover {\n    transform: scale(1.1);\n  }\n} "],
-  "mappings": "AAAA,MACE,QAAA,MAIF,CAAA,eACE,WAAA,IAAA,IAAA,KAEA,CAHF,cAGE,OACE,WAAA,EAAA,IAAA,KAAA,UAKJ,CAAA,cACE,WAAA,IAAA,IAAA,KAEA,CAHF,aAGE,OACE,WAAA,EAAA,IAAA,KAAA,UAKJ,CAAA,qBACE,WAAA,IAAA,IAAA,KAEA,CAHF,oBAGE,OACE,UAAA,MAAA,MAKJ,CAAA,aACE,WAAA,IAAA,IAAA,KAEA,CAHF,YAGE,OACE,UAAA,MAAA",
-  "names": []
-}

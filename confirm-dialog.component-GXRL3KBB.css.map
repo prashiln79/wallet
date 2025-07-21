@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["confirm-dialog.component.ts"],
-  "sourcesContent": ["\n    .confirm-dialog {\n      padding: 1rem;\n    }\n    \n    .dialog-header {\n      display: flex;\n      align-items: center;\n      gap: 0.75rem;\n      margin-bottom: 1rem;\n      \n      .dialog-icon {\n        font-size: 2rem;\n        width: 2rem;\n        height: 2rem;\n        color: #6b7280;\n        \n        &.delete {\n          color: #dc2626;\n        }\n      }\n      \n      .dialog-title {\n        font-size: 1.25rem;\n        font-weight: 600;\n        color: #1f2937;\n        margin: 0;\n      }\n    }\n    \n    .dialog-content {\n      margin-bottom: 1.5rem;\n      \n      .dialog-message {\n        color: #6b7280;\n        font-size: 1rem;\n        line-height: 1.5;\n        margin: 0;\n      }\n    }\n    \n    .dialog-actions {\n      display: flex;\n      justify-content: flex-end;\n      gap: 0.75rem;\n      \n      .cancel-button {\n        color: #6b7280;\n      }\n      \n      .confirm-button {\n        font-weight: 500;\n      }\n    }\n  "],
-  "mappings": "AACI,CAAA,eAAA,QACE,KAGF,CAAA,cACE,QAAA,KACA,YAAA,OACA,IAAA,OACA,cAAA,KAEA,CANF,cAME,CAAA,YACE,UAAA,KACA,MAAA,KACA,OAAA,KACA,MAAA,QAEA,CAZJ,cAYI,CANF,WAME,CAAA,OACE,MAAA,QAIJ,CAjBF,cAiBE,CAAA,aACE,UAAA,QACA,YAAA,IACA,MAAA,QAxBJ,OAyBI,EAIJ,CAAA,eACE,cAAA,OAEA,CAHF,eAGE,CAAA,eACE,MAAA,QACA,UAAA,KACA,YAAA,IAnCJ,OAoCI,EAIJ,CAAA,eACE,QAAA,KACA,gBAAA,SACA,IAAA,OAEA,CALF,eAKE,CAAA,cACE,MAAA,QAGF,CATF,eASE,CAAA,eACE,YAAA",
-  "names": []
-}
