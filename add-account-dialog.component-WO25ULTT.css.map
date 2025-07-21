@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/component/dashboard/accounts/add-account-dialog/add-account-dialog.component.scss"],
+  "sourcesContent": [":host {\n  display: block;\n  max-width: 600px;\n  width: 100%;\n}\n\n/* Form field styling */\nmat-form-field {\n  width: 100%;\n}\n\n/* Button styling */\nbutton {\n  transition: all 0.2s ease-in-out;\n}\n\nbutton:hover {\n  transform: translateY(-1px);\n}\n\nbutton:active {\n  transform: translateY(0);\n}\n\n/* Loading state */\nbutton:disabled {\n  opacity: 0.6;\n  cursor: not-allowed;\n}\n\n/* Error state animations */\n.text-red-500 {\n  animation: shake 0.5s ease-in-out;\n}\n\n@keyframes shake {\n  0%, 100% { transform: translateX(0); }\n  25% { transform: translateX(-5px); }\n  75% { transform: translateX(5px); }\n}\n\n/* Success state */\n.text-green-500 {\n  animation: pulse 0.5s ease-in-out;\n}\n\n@keyframes pulse {\n  0% { transform: scale(1); }\n  50% { transform: scale(1.05); }\n  100% { transform: scale(1); }\n}\n\n/* Dark mode transitions */\n* {\n  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;\n} "],
+  "mappings": "AAAA,MACE,QAAA,MACA,UAAA,MACA,MAAA,KAIF,eACE,MAAA,KAIF,OACE,WAAA,IAAA,IAAA,YAGF,MAAA,OACE,UAAA,WAAA,MAGF,MAAA,QACE,UAAA,WAAA,GAIF,MAAA,UACE,QAAA,GACA,OAAA,YAIF,CAAA,aACE,UAAA,MAAA,IAAA,YAGF,WAHE,MAIA,MAAW,UAAA,UAAA,GACX,IAAM,UAAA,UAAA,MACN,IAAM,UAAA,UAAA,MAIR,CAAA,eACE,UAAA,MAAA,IAAA,YAGF,WAHE,MAIA,GAAK,UAAA,MAAA,GACL,IAAM,UAAA,MAAA,MACN,GAAO,UAAA,MAAA,IAIT,EACE,WAAA,iBAAA,IAAA,IAAA,CAAA,MAAA,IAAA,IAAA,CAAA,aAAA,IAAA",
+  "names": []
+}

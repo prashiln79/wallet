@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/component/auth/sign-in/sign-in.component.scss"],
+  "sourcesContent": [".bg{\n    background-image: url('../../../../assets/images/sign-in.png');\n    height: 22rem;\n    width: 25rem;\n}"],
+  "mappings": "AAAA,CAAA,GACI,iBAAA,oCACA,OAAA,MACA,MAAA",
+  "names": []
+}

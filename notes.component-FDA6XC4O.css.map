@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/component/dashboard/notes/notes.component.scss"],
+  "sourcesContent": ["// Notes component styles\n.line-clamp-3 {\n  display: -webkit-box;\n  -webkit-line-clamp: 3;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n}\n\n.notes-container {\n  // Add any specific styles for the notes component here\n}\n\n// Custom scrollbar for better UX\n::-webkit-scrollbar {\n  width: 6px;\n}\n\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n  border-radius: 3px;\n}\n\n::-webkit-scrollbar-thumb {\n  background: #c1c1c1;\n  border-radius: 3px;\n}\n\n::-webkit-scrollbar-thumb:hover {\n  background: #a8a8a8;\n} "],
+  "mappings": "AACA,CAAA,aACE,QAAA,YACA,mBAAA,EACA,mBAAA,SACA,SAAA,OAQF,oBACE,MAAA,IAGF,0BACE,WAAA,QAjBF,cAkBE,IAGF,0BACE,WAAA,QAtBF,cAuBE,IAGF,yBAAA,OACE,WAAA",
+  "names": []
+}

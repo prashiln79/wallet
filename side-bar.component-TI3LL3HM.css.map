@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/component/dashboard/side-bar/side-bar.component.scss"],
+  "sourcesContent": [".full-height {\n  @apply h-[100vh];\n}\n\n.color-ball {\n  height: 3rem;\n  width: 3rem;\n  font-size: clamp(2.5rem, 6vw, 4rem);\n}\n"],
+  "mappings": "AACE,CAAA,YAAA,OAAA,KAAA,CAGF,CAAA,WACE,OAAA,KACA,MAAA,KACA,UAAA,MAAA,MAAA,CAAA,GAAA,CAAA,KACF",
+  "names": []
+}
