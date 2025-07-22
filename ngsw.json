@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1753188481823,
+  "timestamp": 1753189263306,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -24,10 +24,10 @@
         "https://prashiln79.github.io/wallet/favicon.ico",
         "https://prashiln79.github.io/wallet/firebase-messaging-sw.js",
         "https://prashiln79.github.io/wallet/index.html",
-        "https://prashiln79.github.io/wallet/main-YRK5DJ75.js",
+        "https://prashiln79.github.io/wallet/main-7OD23PX7.js",
         "https://prashiln79.github.io/wallet/manifest.webmanifest",
         "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js",
-        "https://prashiln79.github.io/wallet/styles-DKTKBGTZ.css"
+        "https://prashiln79.github.io/wallet/styles-LN4OFOCI.css"
       ],
       "patterns": []
     },
@@ -214,11 +214,11 @@
     "https://prashiln79.github.io/wallet/icons/icon-512x512.png": "1ba671fbd7e7ec01645dc27c087a1a9e6784a94f",
     "https://prashiln79.github.io/wallet/icons/icon-72x72.png": "00bcf6dfd40cf02da208cd094f914e3598a1e41e",
     "https://prashiln79.github.io/wallet/icons/icon-96x96.png": "ec2cea95079d053a34b659b57e8030a0bbb53b5c",
-    "https://prashiln79.github.io/wallet/index.html": "e3445d13de25ab3f8309c5966fcc28aaf9a699a0",
-    "https://prashiln79.github.io/wallet/main-YRK5DJ75.js": "fead9a3607f3ddc94ba08c4e0ece5239e4207ebf",
+    "https://prashiln79.github.io/wallet/index.html": "dd4645ce8f03f088bbcf000a517480b340e85471",
+    "https://prashiln79.github.io/wallet/main-7OD23PX7.js": "50aad7b26401983bfdbee68971fd5ebe2ec89e83",
     "https://prashiln79.github.io/wallet/manifest.webmanifest": "ac7fffd37e96f8350646cfd58fd5ff1af8146bd5",
     "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js": "c0ffed56fdd0aae538663d8a376bbeeb78762696",
-    "https://prashiln79.github.io/wallet/styles-DKTKBGTZ.css": "a2b11e67ee8429ce7e2ebaec33ee1f6e07dac82a"
+    "https://prashiln79.github.io/wallet/styles-LN4OFOCI.css": "495c0d6d9fa7176e37803a82ad857c5da1592179"
   },
   "navigationUrls": [
     {
