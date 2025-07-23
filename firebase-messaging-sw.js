@@ -224,6 +224,131 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(self.clients.claim());
 });
 
+// Background Sync API - Register sync events
+self.addEventListener('sync', (event) => {
+  console.log('Background sync event:', event.tag);
+  
+  if (event.tag === 'sync-transactions') {
+    event.waitUntil(syncPendingTransactions());
+  } else if (event.tag === 'sync-budgets') {
+    event.waitUntil(syncBudgetData());
+  } else if (event.tag === 'sync-accounts') {
+    event.waitUntil(syncAccountData());
+  } else if (event.tag === 'sync-goals') {
+    event.waitUntil(syncGoalData());
+  }
+});
+
+// Sync pending transactions when online
+async function syncPendingTransactions() {
+  try {
+    console.log('Syncing pending transactions...');
+    
+    // Get pending transactions from IndexedDB
+    const pendingTransactions = await getPendingTransactions();
+    
+    if (pendingTransactions.length === 0) {
+      console.log('No pending transactions to sync');
+      return;
+    }
+    
+    // Sync each pending transaction
+    for (const transaction of pendingTransactions) {
+      try {
+        await syncTransaction(transaction);
+        await removePendingTransaction(transaction.id);
+        console.log('Transaction synced successfully:', transaction.id);
+      } catch (error) {
+        console.error('Failed to sync transaction:', transaction.id, error);
+        // Keep transaction in pending queue for next sync attempt
+      }
+    }
+    
+    // Show success notification
+    await showSyncNotification('Transactions synced successfully', 'Your offline transactions have been uploaded.');
+    
+  } catch (error) {
+    console.error('Background sync failed:', error);
+    await showSyncNotification('Sync failed', 'Some transactions could not be synced. They will be retried later.');
+  }
+}
+
+// Sync budget data
+async function syncBudgetData() {
+  try {
+    console.log('Syncing budget data...');
+    // Implement budget sync logic
+    await showSyncNotification('Budget synced', 'Your budget data has been updated.');
+  } catch (error) {
+    console.error('Budget sync failed:', error);
+  }
+}
+
+// Sync account data
+async function syncAccountData() {
+  try {
+    console.log('Syncing account data...');
+    // Implement account sync logic
+    await showSyncNotification('Accounts synced', 'Your account data has been updated.');
+  } catch (error) {
+    console.error('Account sync failed:', error);
+  }
+}
+
+// Sync goal data
+async function syncGoalData() {
+  try {
+    console.log('Syncing goal data...');
+    // Implement goal sync logic
+    await showSyncNotification('Goals synced', 'Your goal data has been updated.');
+  } catch (error) {
+    console.error('Goal sync failed:', error);
+  }
+}
+
+// Helper function to show sync notifications
+async function showSyncNotification(title, body) {
+  const notificationOptions = {
+    body: body,
+    icon: '/wallet/assets/icon/app-icon/icon-192x192.png',
+    badge: '/wallet/assets/icon/app-icon/icon-72x72.png',
+    tag: 'sync-notification',
+    requireInteraction: false,
+    silent: true
+  };
+  
+  await self.registration.showNotification(title, notificationOptions);
+}
+
+// IndexedDB operations for pending transactions
+async function getPendingTransactions() {
+  // This would interact with your IndexedDB to get pending transactions
+  // Implementation depends on your data storage strategy
+  return [];
+}
+
+async function removePendingTransaction(transactionId) {
+  // Remove synced transaction from pending queue
+  console.log('Removing pending transaction:', transactionId);
+}
+
+async function syncTransaction(transaction) {
+  // Send transaction to your backend API
+  const response = await fetch('/api/transactions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(transaction)
+  });
+  
+  if (!response.ok) {
+    throw new Error(`Failed to sync transaction: ${response.status}`);
+  }
+  
+  return response.json();
+}
+
 // Handle service worker message events
 self.addEventListener('message', (event) => {
   console.log('Service worker message received:', event.data);

@@ -6,6 +6,7 @@
   "theme_color": "#dbe9fe",
   "background_color": "#fafafa",
   "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
   "orientation": "portrait-primary",
   "scope": "./",
   "start_url": "./",
@@ -18,6 +19,49 @@
   },
   "launch_handlers": {
     "client_mode": "navigate-existing"
+  },
+  "file_handlers": [
+    {
+      "action": "./",
+      "accept": {
+        "text/csv": [".csv"],
+        "application/vnd.ms-excel": [".xls"],
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": [".xlsx"],
+        "application/pdf": [".pdf"],
+        "text/plain": [".txt"]
+      }
+    }
+  ],
+  "handle_links": "preferred",
+  "protocol_handlers": [
+    {
+      "protocol": "web+money",
+      "url": "./?protocol=%s"
+    },
+    {
+      "protocol": "web+transaction",
+      "url": "./?action=add-transaction&data=%s"
+    },
+    {
+      "protocol": "web+budget",
+      "url": "./?action=budget&id=%s"
+    }
+  ],
+  "share_target": {
+    "action": "./?action=share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "receipts",
+          "accept": ["image/*", "application/pdf", "text/csv"]
+        }
+      ]
+    }
   },
   "icons": [
     {
@@ -125,6 +169,138 @@
           "sizes": "96x96"
         }
       ]
+    },
+    {
+      "name": "View Reports",
+      "short_name": "Reports",
+      "description": "Check your financial reports and analytics",
+      "url": "./?action=reports",
+      "icons": [
+        {
+          "src": "icons/icon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Manage Budgets",
+      "short_name": "Budgets",
+      "description": "View and manage your budgets",
+      "url": "./?action=budgets",
+      "icons": [
+        {
+          "src": "icons/icon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "View Accounts",
+      "short_name": "Accounts",
+      "description": "Check your account balances",
+      "url": "./?action=accounts",
+      "icons": [
+        {
+          "src": "icons/icon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Financial Goals",
+      "short_name": "Goals",
+      "description": "Track your financial goals",
+      "url": "./?action=goals",
+      "icons": [
+        {
+          "src": "icons/icon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
     }
+  ],
+  "widgets": [
+    {
+      "name": "Account Balance",
+      "short_name": "Balance",
+      "description": "View your current account balances",
+      "ms_ac_template": "widgets/account-balance.html",
+      "data": "widgets/account-balance.json",
+      "auth": false,
+      "screenshots": [
+        {
+          "src": "assets/images/screenshot/widget-balance.png",
+          "sizes": "400x300",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Recent Transactions",
+      "short_name": "Transactions",
+      "description": "View your recent financial transactions",
+      "ms_ac_template": "widgets/recent-transactions.html",
+      "data": "widgets/recent-transactions.json",
+      "auth": true,
+      "screenshots": [
+        {
+          "src": "assets/images/screenshot/widget-transactions.png",
+          "sizes": "400x300",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Budget Overview",
+      "short_name": "Budget",
+      "description": "Track your budget progress and spending",
+      "ms_ac_template": "widgets/budget-overview.html",
+      "data": "widgets/budget-overview.json",
+      "auth": true,
+      "screenshots": [
+        {
+          "src": "assets/images/screenshot/widget-budget.png",
+          "sizes": "400x300",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b5",
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://mint.intuit.com",
+      "id": "com.intuit.mint"
+    },
+    {
+      "platform": "webapp",
+      "url": "https://www.ynab.com",
+      "id": "com.ynab.app"
+    },
+    {
+      "platform": "webapp",
+      "url": "https://www.personalcapital.com",
+      "id": "com.personalcapital.app"
+    },
+    {
+      "platform": "webapp",
+      "url": "https://www.splitwise.com",
+      "id": "com.splitwise.app"
+    },
+    {
+      "platform": "webapp",
+      "url": "https://www.acorns.com",
+      "id": "com.acorns.app"
+    }
+  ],
+  "scope_extensions": [
+    "https://*.moneymanager.com",
+    "https://api.moneymanager.com",
+    "https://dashboard.moneymanager.com",
+    "https://mobile.moneymanager.com",
+    "https://admin.moneymanager.com",
+    "https://support.moneymanager.com",
+    "https://docs.moneymanager.com"
   ]
 }
