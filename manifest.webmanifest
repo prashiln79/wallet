@@ -18,7 +18,16 @@
     "preferred_width": 400
   },
   "launch_handlers": {
-    "client_mode": "navigate-existing"
+    "client_mode": "navigate-existing",
+    "route_to": "existing-client",
+    "exclude_matches": [
+      {
+        "url_pattern": "https://admin.prashiln79.github.io/*"
+      },
+      {
+        "url_pattern": "https://support.prashiln79.github.io/*"
+      }
+    ]
   },
   "file_handlers": [
     {
@@ -295,12 +304,12 @@
     }
   ],
   "scope_extensions": [
-    "https://*.moneymanager.com",
-    "https://api.moneymanager.com",
-    "https://dashboard.moneymanager.com",
-    "https://mobile.moneymanager.com",
-    "https://admin.moneymanager.com",
-    "https://support.moneymanager.com",
-    "https://docs.moneymanager.com"
+    "https://*.prashiln79.github.io",
+    "https://prashiln79.github.io/wallet/*",
+    "https://api.prashiln79.github.io",
+    "https://mobile.prashiln79.github.io",
+    "https://admin.prashiln79.github.io",
+    "https://support.prashiln79.github.io",
+    "https://docs.prashiln79.github.io"
   ]
 }

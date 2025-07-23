@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1753279121634,
+  "timestamp": 1753281586933,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -216,7 +216,7 @@
     "https://prashiln79.github.io/wallet/icons/icon-96x96.png": "ec2cea95079d053a34b659b57e8030a0bbb53b5c",
     "https://prashiln79.github.io/wallet/index.html": "d6de1e249496a2dcf5f7647603f6bac921df34e1",
     "https://prashiln79.github.io/wallet/main-GJTWUL7J.js": "109722ea6c18c6b1e946aaa706e146064df035a3",
-    "https://prashiln79.github.io/wallet/manifest.webmanifest": "f178b5810dcf4c7c08b1a830271661d8e5df4c4a",
+    "https://prashiln79.github.io/wallet/manifest.webmanifest": "ca448828490b7731d7fbc491571ecaeb493fd5a0",
     "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js": "c0ffed56fdd0aae538663d8a376bbeeb78762696",
     "https://prashiln79.github.io/wallet/styles-3IFZL7JX.css": "b5a36469e054df385faa2679dee12413f0683db4"
   },
