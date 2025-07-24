@@ -231,10 +231,17 @@ async function syncPendingTransactions() {
         await syncTransaction(transaction);
         await removePendingTransaction(transaction.id);
         console.log('Transaction synced successfully:', transaction.id);
+        
+        // Notify the Angular app about successful sync
+        await notifySyncCompleted(transaction.id, true);
+        
         successCount++;
         
       } catch (error) {
         console.error('Failed to sync transaction:', transaction.id, error);
+        
+        // Notify the Angular app about failed sync
+        await notifySyncCompleted(transaction.id, false);
         
         // Check if it's a Firebase validation error
         if (isFirebaseValidationError(error)) {
@@ -316,6 +323,25 @@ async function showSyncNotification(title, body) {
   });
   
   await self.registration.showNotification(title, notificationOptions);
+}
+
+// Notify Angular app about sync completion
+async function notifySyncCompleted(transactionId, success) {
+  try {
+    // Send message to all clients (Angular app instances)
+    const clients = await self.clients.matchAll();
+    clients.forEach(client => {
+      client.postMessage({
+        type: 'SYNC_COMPLETED',
+        transactionId: transactionId,
+        success: success
+      });
+    });
+    
+    console.log(`Sync notification sent for transaction ${transactionId}: ${success ? 'success' : 'failed'}`);
+  } catch (error) {
+    console.error('Failed to notify sync completion:', error);
+  }
 }
 
 // IndexedDB operations for pending transactions
