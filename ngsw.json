@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1753545995226,
+  "timestamp": 1753546070648,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -107,7 +107,7 @@
       "strategy": "performance",
       "maxSize": 1000,
       "maxAge": 604800000,
-      "timeoutMs": 0,
+      "timeoutMs": 1000,
       "cacheQueryOptions": {
         "ignoreVary": true
       },
@@ -123,7 +123,7 @@
       "strategy": "performance",
       "maxSize": 10,
       "maxAge": 3600000,
-      "timeoutMs": 0,
+      "timeoutMs": 1000,
       "cacheQueryOptions": {
         "ignoreVary": true
       },
@@ -137,7 +137,7 @@
       "strategy": "performance",
       "maxSize": 50,
       "maxAge": 3600000,
-      "timeoutMs": 0,
+      "timeoutMs": 1000,
       "cacheQueryOptions": {
         "ignoreVary": true
       },
@@ -152,7 +152,7 @@
       "strategy": "performance",
       "maxSize": 200,
       "maxAge": 2592000000,
-      "timeoutMs": 0,
+      "timeoutMs": 1000,
       "cacheQueryOptions": {
         "ignoreVary": true
       },
@@ -166,7 +166,7 @@
       "strategy": "performance",
       "maxSize": 1000,
       "maxAge": 31536000000,
-      "timeoutMs": 0,
+      "timeoutMs": 1000,
       "cacheQueryOptions": {
         "ignoreVary": true
       },
