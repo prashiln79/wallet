@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1753548565524,
+  "timestamp": 1753548697494,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -27,7 +27,7 @@
         "https://prashiln79.github.io/wallet/main-HRPDGEDH.js",
         "https://prashiln79.github.io/wallet/manifest.json",
         "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js",
-        "https://prashiln79.github.io/wallet/styles-Y57YY73N.css"
+        "https://prashiln79.github.io/wallet/styles-4AMWHN4F.css"
       ],
       "patterns": []
     },
@@ -214,11 +214,11 @@
     "https://prashiln79.github.io/wallet/icons/icon-512x512.png": "1ba671fbd7e7ec01645dc27c087a1a9e6784a94f",
     "https://prashiln79.github.io/wallet/icons/icon-72x72.png": "00bcf6dfd40cf02da208cd094f914e3598a1e41e",
     "https://prashiln79.github.io/wallet/icons/icon-96x96.png": "ec2cea95079d053a34b659b57e8030a0bbb53b5c",
-    "https://prashiln79.github.io/wallet/index.html": "e88043adc42e64b1e3c2e3ebf69af4e299a21f48",
+    "https://prashiln79.github.io/wallet/index.html": "f93d40ce8e4a3caed47e53991950f5cb88d6de16",
     "https://prashiln79.github.io/wallet/main-HRPDGEDH.js": "0021a5eb323705b09d7c2b658c22b2cbc2fa2577",
     "https://prashiln79.github.io/wallet/manifest.json": "ca448828490b7731d7fbc491571ecaeb493fd5a0",
     "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js": "c0ffed56fdd0aae538663d8a376bbeeb78762696",
-    "https://prashiln79.github.io/wallet/styles-Y57YY73N.css": "4eecf09b36f66c6c0ff7d7cac038bf7938668d06"
+    "https://prashiln79.github.io/wallet/styles-4AMWHN4F.css": "8bc2ceaedadc3364e0c2b399c168c0b837ebe4ca"
   },
   "navigationUrls": [
     {
