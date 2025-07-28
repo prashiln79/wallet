@@ -1,63 +1,113 @@
-# 💰 Money Manager – Personal Finance Tracker
+# Money Manager
 
-[![PWA](https://img.shields.io/badge/PWA-Ready-green)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
-[![Made with Angular](https://img.shields.io/badge/Made%20with-Angular-DD0031?logo=angular)](https://angular.io)
-[![Firebase](https://img.shields.io/badge/Backend-Firebase-ffca28?logo=firebase)](https://firebase.google.com/)
-[![Live Demo](https://img.shields.io/badge/Demo-Live-blue)](https://prashiln79.github.io/wallet/#/landing)
+A comprehensive personal finance management application built with Angular.
 
-**Money Manager** is a simple and powerful personal finance tracker built using Angular and Firebase. It helps you manage your income, expenses, and budget visually and effectively—accessible on both desktop and mobile devices.
+## Features
 
----
+- **Account Management**: Track multiple bank accounts, credit cards, and loans
+- **Transaction Tracking**: Record and categorize income and expenses
+- **Category Management**: Organize transactions with custom categories and budgets
+- **Budget Planning**: Set and monitor spending limits
+- **Reports & Analytics**: Visualize your financial data
+- **Offline Support**: Work without internet connection
+- **PWA Ready**: Install as a mobile app
 
-## 🚀 Features
+## Testing
 
-- Add, edit, and delete income/expenses
-- Real-time charts and data visualization
-- Google authentication via Firebase
-- Responsive design & PWA support
-- Import bank statements (CSV)
-- Date & category-based filters
-- Auto-categorized default entries
-- Cloud-sync across devices
+This project includes comprehensive test coverage for all major components. Tests are automatically run during the build process to ensure code quality.
 
----
-
-## 🌐 Live Demo
-
-👉 [Try Now](https://prashiln79.github.io/wallet/#/landing)
-
----
-
-## 📸 Screenshots
-
-![Dashboard Screenshot](https://prashiln79.github.io/wallet/assets/images/screenshot/img1.png)
-![Dashboard Screenshot](https://prashiln79.github.io/wallet/assets/images/screenshot/img2.png)
-![Dashboard Screenshot](https://prashiln79.github.io/wallet/assets/images/screenshot/img3.png)
-![Dashboard Screenshot](https://prashiln79.github.io/wallet/assets/images/screenshot/img4.png)
-
----
-
-## 🛠️ Tech Stack
-
-| Layer       | Technology                      |
-|-------------|----------------------------------|
-| Frontend    | Angular, Angular Material, SCSS  |
-| Backend     | Firebase Firestore, Firebase Auth|
-| Data Import | PapaParse (CSV to JSON)          |
-| Charts      | ngx-charts                       |
-| Hosting     | GitHub Pages                     |
-
----
-
-## 📦 Installation & Development
+### Running Tests
 
 ```bash
-# Clone the repo
-git clone https://github.com/yourusername/money-manager.git
-cd money-manager
+# Run tests in watch mode (development)
+npm test
 
+# Run tests once with coverage (CI/CD)
+npm run test:ci
+
+# Run tests with detailed coverage report
+npm run test:coverage
+
+# Run tests using the test runner script
+./scripts/run-tests.sh
+```
+
+### Test Coverage
+
+The test suite covers:
+
+- **Category Component**: CRUD operations, budget calculations, statistics
+- **Accounts Component**: Account management, calculations, loan/credit card features
+- **Transaction List Component**: Transaction management, filtering, import/export
+
+### Test Structure
+
+```
+src/app/component/dashboard/
+├── category/
+│   └── category.component.spec.ts          # Category component tests
+├── accounts/
+│   └── accounts.component.spec.ts          # Accounts component tests
+└── transaction-list/
+    └── transaction-list.component.spec.ts  # Transaction list tests
+```
+
+### Coverage Requirements
+
+- **Statements**: 80%
+- **Branches**: 80%
+- **Functions**: 80%
+- **Lines**: 80%
+
+## Development
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- Angular CLI
+
+### Installation
+
+```bash
 # Install dependencies
 npm install
 
-# Run the app locally
-ng serve
+# Start development server
+npm start
+
+# Build for production (includes test run)
+npm run build
+```
+
+### Build Process
+
+The build process automatically:
+1. Runs all tests with coverage
+2. Ensures minimum 80% coverage
+3. Builds the application for production
+4. Fails if tests don't pass
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── component/dashboard/     # Main dashboard components
+│   ├── modules/                 # Feature modules
+│   ├── store/                   # NgRx state management
+│   └── util/                    # Shared utilities and services
+├── assets/                      # Static assets
+└── environments/                # Environment configurations
+```
+
+## Contributing
+
+1. Write tests for new features
+2. Ensure all tests pass
+3. Maintain minimum 80% code coverage
+4. Follow Angular coding standards
+
+## License
+
+This project is licensed under the MIT License.

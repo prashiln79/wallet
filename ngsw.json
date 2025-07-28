@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1753688883630,
+  "timestamp": 1753695904845,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -27,7 +27,7 @@
         "https://prashiln79.github.io/wallet/main-66TAOOV6.js",
         "https://prashiln79.github.io/wallet/manifest.json",
         "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js",
-        "https://prashiln79.github.io/wallet/styles-YGFGHKPB.css"
+        "https://prashiln79.github.io/wallet/styles-K3UMLFHD.css"
       ],
       "patterns": []
     },
@@ -214,11 +214,11 @@
     "https://prashiln79.github.io/wallet/icons/icon-512x512.png": "1ba671fbd7e7ec01645dc27c087a1a9e6784a94f",
     "https://prashiln79.github.io/wallet/icons/icon-72x72.png": "00bcf6dfd40cf02da208cd094f914e3598a1e41e",
     "https://prashiln79.github.io/wallet/icons/icon-96x96.png": "ec2cea95079d053a34b659b57e8030a0bbb53b5c",
-    "https://prashiln79.github.io/wallet/index.html": "0e3c77d1cb3b079f8915ed69a0ed2c442ed57549",
+    "https://prashiln79.github.io/wallet/index.html": "caa5ac6d7772c70be100de0a239085384525a5b8",
     "https://prashiln79.github.io/wallet/main-66TAOOV6.js": "316aa7f2d9d6ec881e766c1bf2f173c363fe6be9",
     "https://prashiln79.github.io/wallet/manifest.json": "ca448828490b7731d7fbc491571ecaeb493fd5a0",
     "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js": "c0ffed56fdd0aae538663d8a376bbeeb78762696",
-    "https://prashiln79.github.io/wallet/styles-YGFGHKPB.css": "93c8ae608fb75f37f2e805525c5d55c694a5e34e"
+    "https://prashiln79.github.io/wallet/styles-K3UMLFHD.css": "3827dbc2bc2fa4aae40a5dbe8e2fd44a974a7cce"
   },
   "navigationUrls": [
     {
