@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1753855131643,
+  "timestamp": 1753856852884,
   "index": "https://prashiln79.github.io/wallet/index.html",
   "assetGroups": [
     {
@@ -24,10 +24,10 @@
         "https://prashiln79.github.io/wallet/favicon.ico",
         "https://prashiln79.github.io/wallet/firebase-messaging-sw.js",
         "https://prashiln79.github.io/wallet/index.html",
-        "https://prashiln79.github.io/wallet/main-S7Y25RQA.js",
+        "https://prashiln79.github.io/wallet/main-EXM4GVNC.js",
         "https://prashiln79.github.io/wallet/manifest.json",
         "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js",
-        "https://prashiln79.github.io/wallet/styles-C6EFVAYI.css"
+        "https://prashiln79.github.io/wallet/styles-ZPHOHIB2.css"
       ],
       "patterns": []
     },
@@ -214,11 +214,11 @@
     "https://prashiln79.github.io/wallet/icons/icon-512x512.png": "1ba671fbd7e7ec01645dc27c087a1a9e6784a94f",
     "https://prashiln79.github.io/wallet/icons/icon-72x72.png": "00bcf6dfd40cf02da208cd094f914e3598a1e41e",
     "https://prashiln79.github.io/wallet/icons/icon-96x96.png": "ec2cea95079d053a34b659b57e8030a0bbb53b5c",
-    "https://prashiln79.github.io/wallet/index.html": "dea1f114525e73d14d822a2e10aab8664ab35498",
-    "https://prashiln79.github.io/wallet/main-S7Y25RQA.js": "4db51255177aa2e667254b0eaeae41d44dcce37d",
+    "https://prashiln79.github.io/wallet/index.html": "3005bf6d9e06c0f964988264128db109bf528d3a",
+    "https://prashiln79.github.io/wallet/main-EXM4GVNC.js": "c12c70bef6eccf98df04de0e333368857a6874f3",
     "https://prashiln79.github.io/wallet/manifest.json": "ca448828490b7731d7fbc491571ecaeb493fd5a0",
     "https://prashiln79.github.io/wallet/polyfills-7GJDLKRV.js": "c0ffed56fdd0aae538663d8a376bbeeb78762696",
-    "https://prashiln79.github.io/wallet/styles-C6EFVAYI.css": "55ecd47fdd236950e16966f431828302ab1752f8"
+    "https://prashiln79.github.io/wallet/styles-ZPHOHIB2.css": "06214dfab67e2493b97ad07bec42d04f41cc6862"
   },
   "navigationUrls": [
     {
