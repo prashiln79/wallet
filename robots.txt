@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prashiln79.github.io/wallet/#/landing
