@@ -2,7 +2,7 @@
   <img src="assets/images/screenshot/banner.png" alt="Money Manager Banner" width="100%">
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/Angular-17-red" />
+  <img src="https://img.shields.io/badge/Angular-18-red" />
   <img src="https://img.shields.io/badge/PWA-Ready-green" />
   <img src="https://img.shields.io/badge/Tests-80%25-success" />
   <img src="https://img.shields.io/badge/License-MIT-blue" />
