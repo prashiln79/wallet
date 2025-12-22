@@ -1,3 +1,12 @@
+<p align="center">
+  <img src="assets/images/screenshot/banner.png" alt="Money Manager Banner" width="100%">
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Angular-17-red" />
+  <img src="https://img.shields.io/badge/PWA-Ready-green" />
+  <img src="https://img.shields.io/badge/Tests-80%25-success" />
+  <img src="https://img.shields.io/badge/License-MIT-blue" />
+</p>
 # Money Manager
 
 A comprehensive personal finance management application built with Angular.
@@ -99,7 +108,19 @@ src/
 │   └── util/                    # Shared utilities and services
 ├── assets/                      # Static assets
 └── environments/                # Environment configurations
+
 ```
+
+## Screenshots
+
+### Dashboard Overview
+![Dashboard](assets/images/screenshot/img1.png)
+
+### Budget & Categories
+![Budget](assets/images/screenshot/img2.png)
+
+### Reports & Analytics
+![Reports](assets/images/screenshot/img3.png)
 
 ## Contributing
 
