@@ -305,7 +305,7 @@
   ],
   "scope_extensions": [
     "https://*.prashiln79.github.io",
-    "https://prashiln79.github.io/wallet/*",
+    "https://prashiln79.github.io/money-manager/*",
     "https://api.prashiln79.github.io",
     "https://mobile.prashiln79.github.io",
     "https://admin.prashiln79.github.io",

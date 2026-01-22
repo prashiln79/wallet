@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://prashiln79.github.io/wallet/#/landing
+Sitemap: https://prashiln79.github.io/money-manager/#/landing

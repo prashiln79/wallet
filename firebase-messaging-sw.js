@@ -46,8 +46,8 @@ function getNotificationOptions(payload, customOptions = {}) {
   
   const defaultOptions = {
     body: payload.notification?.body || 'You have a new notification',
-    icon: payload.notification?.icon || '/wallet/assets/icon/app-icon/icon-192x192.png',
-    badge: payload.notification?.badge || '/wallet/assets/icon/app-icon/icon-72x72.png',
+    icon: payload.notification?.icon || '/money-manager/assets/icon/app-icon/icon-192x192.png',
+    badge: payload.notification?.badge || '/money-manager/assets/icon/app-icon/icon-72x72.png',
     image: payload.notification?.image,
     data: payload.data || {},
     tag: payload.notification?.tag,
@@ -62,7 +62,7 @@ function getNotificationOptions(payload, customOptions = {}) {
 
   // Platform-specific adjustments
   if (platform.isIOS && platform.isSafari) {
-    defaultOptions.icon = payload.notification?.icon || '/wallet/assets/icon/app-icon/icon-152x152.png';
+    defaultOptions.icon = payload.notification?.icon || '/money-manager/assets/icon/app-icon/icon-152x152.png';
     defaultOptions.actions = [{ action: 'view', title: 'View' }];
   }
 
@@ -155,8 +155,8 @@ self.addEventListener('push', (event) => {
       // Fallback notification
       const fallbackOptions = getNotificationOptions({}, {
         body: 'You have a new notification',
-        icon: '/wallet/assets/icon/app-icon/icon-192x192.png',
-        badge: '/wallet/assets/icon/app-icon/icon-72x72.png'
+        icon: '/money-manager/assets/icon/app-icon/icon-192x192.png',
+        badge: '/money-manager/assets/icon/app-icon/icon-72x72.png'
       });
 
       event.waitUntil(
